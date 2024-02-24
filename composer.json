@@ -1,0 +1,25 @@
+{
+    "name": "sahdoio/dynamodb-crud",
+    "description": "DynamoDB with PHP - Simple Crud",
+    "require": {
+        "guzzlehttp/guzzle": "^7.8",
+        "aws/aws-sdk-php": "^3.300",
+        "ramsey/uuid": "^4.7",
+        "fakerphp/faker": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lucas Sahdo"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "8.2"
+        }
+    }
+}

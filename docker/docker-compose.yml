@@ -1,0 +1,12 @@
+services:
+
+  dynamo-app:
+    container_name: dynamo-app
+    build:
+      context: .
+      dockerfile: app.Dockerfile
+    image: dynamo-app
+    ports:
+      - '9009:9000'
+    volumes:
+      - ../:/var/www
