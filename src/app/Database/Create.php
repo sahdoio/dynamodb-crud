@@ -19,7 +19,6 @@ class Create extends DynamoDB
             'Item' => $marshaler->marshalItem(['post_id' => $postId, ...$payload]),
         ];
 
-
         try {
             $this->database->putItem($params);
             return $postId;
